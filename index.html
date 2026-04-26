@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Book</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #0f172a;
+            color: white;
+            text-align: center;
+        }
+
+        .box {
+            margin-top: 50px;
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        input {
+            padding: 10px;
+            margin: 5px;
+        }
+
+        button {
+            padding: 10px;
+            margin: 5px;
+            background: #38bdf8;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact {
+            background: #334155;
+            margin: 5px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+    <h2>📒 Contact Book</h2>
+
+    <input type="text" id="name" placeholder="Name">
+    <input type="text" id="phone" placeholder="Phone">
+    <br>
+
+    <button onclick="addContact()">➕ Add</button>
+    <button onclick="viewContacts()">📜 View</button>
+    <button onclick="searchContact()">🔍 Search</button>
+    <button onclick="deleteContact()">🗑️ Delete</button>
+
+    <div id="output"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
